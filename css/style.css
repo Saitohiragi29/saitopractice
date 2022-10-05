@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+section .imgBx img.mount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .glass {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    padding: 50px;
+    background-color: rgba(6, 19, 35, 0.7);
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    box-shadow: 0 5px 35px rgba(255, 255, 255, .2);
+    backdrop-filter: blur(2.5px);
+    width: 360px;
+    padding: 50px;
+}
+
+.glass::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    pointer-events: none;
+    border-radius: 30px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255,255,255,.2) 0%,
+        rgba(255,255,255,.1) 15%,
+        transparent 50%,
+        transparent 85%,
+        rgba(255,255,255,.1) 100%
+    );
+}
+
+form .logo {
+    margin: 30px auto;
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+}
+
+form .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+}
+
+form h1 {
+    text-transform: capitalize;
+    text-align: center;
+    color: #8A8080;
+}
+
+form h4 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0 10px;
+    font-weight: 400;
+    color: #8A8080;
+    font-family: 'Istok Web', sans-serif;
+}
+
+form .formgroup {
+    margin-top: 20px;
+    position: relative;
+}
+
+form .formgroup input {
+    border: 1px solid #FFF rgba(255, 255, 255, .2);
+    outline: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    padding-left: 35px;
+    color: #FFF;
+    
+    font-size: 16px;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+form .formgroup input::placeholder {
+    color: #686161;
+    padding-left: 4px;
+}
+
+form .formgroup:not(:nth-child(5)) input {
+    width: 100%;
+}
+
+form .formgroup i {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #8F8F8F;
+    height: 50px;
+    width: 46px;
+}
+
+form .social-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ form .social-logo li {
+     list-style: none;
+     width: 35px;
+     height: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #8F8F8F;
+     border-radius: 50%;
+     margin: 0 4px;
+     cursor: pointer;
+ }
+ 
+ form .social-logo li:hover {
+     background: #2637CC;
+ }
+ 
+ form .social-logo li i {
+     transform: scale(1);
+     filter: invert(1);
+ }
+ 
+form .formgroup label {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+form .formgroup input[type="submit"]{
+    background-color: #FFFFFF;
+    color: rgba(4, 4, 4, 0.8);
+    padding: 8px 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Istok Web', sans-serif;
+}
+
+form .formgroup input[type="submit"]:hover {
+    background-color: #2637CC;
+    color: #FFFFFF;
+}
+
+form .formgroup:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .formgroup a {
+    color: #FFFFFF;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* For responsive  600 */
+@media only screen and (max-width: 600px) {
+    section .imgBx img.mounts {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    section .glass {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        padding: 50px;
+        background-color: rgba(6, 19, 35, 0.7);
+        border-radius: 40px;
+        border: 1px solid #FFF;
+        box-shadow: 0 5px 35px rgb(255 255 255 / 20%);
+        backdrop-filter: blur(2.5px);
+        width: 360px;
+        padding: 50px;
+    }
+    
+    .glass::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        right: 5px;
+        left: 5px;
+        pointer-events: none;
+        border-radius: 30px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255,255,255,.2) 0%,
+            rgba(255,255,255,.1) 15%,
+            transparent 50%,
+            transparent 85%,
+            rgba(255,255,255,.1) 100%
+        );
+    }
+    
+    form .logo {
+        margin: 30px auto;
+        margin-top: 0;
+        width: 100px;
+        height: 100px;
+    }
+    
+    form .logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 40%;
+    }
+    
+    form h1 {
+        text-transform: capitalize;
+        text-align: center;
+        color: #8A8080;
+    }
+    
+    form h4 {
+        text-transform: capitalize;
+        text-align: center;
+        margin: 10px 0 10px;
+        font-weight: 400;
+        color: #8A8080;
+        font-family: 'Istok Web', sans-serif;
+    }
+    
+    form .formgroup {
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    form .formgroup input {
+        border: 1px solid #FFF rgba(255, 255, 255, .2);
+        outline: none;
+        background-color: transparent;
+        padding: 5px 10px;
+        padding-left: 35px;
+        color: #FFF;
+        
+        font-size: 16px;
+        box-shadow: inset 0 0 25px rgba(255, 255, 255, .2);
+        border-radius: 10px;
+    }
+    
+    form .formgroup input::placeholder {
+        color: #686161;
+        padding-left: 4px;
+    }
+    
+    form .formgroup:not(:nth-child(5)) input {
+        width: 100%;
+    }
+    
+    form .formgroup i {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        color: #8F8F8F;
+        height: 50px;
+        width: 46px;
+    }
+    
+    form .social-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     form .social-logo li {
+         list-style: none;
+         width: 35px;
+         height: 35px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: #8F8F8F;
+         border-radius: 50%;
+         margin: 0 4px;
+         cursor: pointer;
+     }
+     
+     form .social-logo li:hover {
+         background: #2637CC;
+     }
+     
+     form .social-logo li i {
+         transform: scale(1);
+         filter: invert(1);
+     }
+     
+    form .formgroup label {
+        color: #FFFFFF;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    form .formgroup input[type="submit"]{
+        background-color: #FFFFFF;
+        color: rgba(4, 4, 4, 0.8);
+        padding: 8px 10px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-family: 'Istok Web', sans-serif;
+    }
+    
+    form .formgroup input[type="submit"]:hover {
+        background-color: #2637CC;
+        color: #FFFFFF;
+    }
+    
+    form .formgroup:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    form .formgroup a {
+        color: #FFFFFF;
+    
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
